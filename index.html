@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ArtMentor</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-json.min.js"></script>
+<style>
+  .json-structure-analysis .file-type {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+  .json-structure-analysis .file-type:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+ .json-structure-analysis .file-type h2 {
+  margin-top: 0;
+  color: #333333;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 10px;
+}
+  .json-structure-analysis .collapsible {
+  background-color: #e0e0e0;
+  color: #333333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.json-structure-analysis .active, .json-structure-analysis .collapsible:hover {
+  background-color: #cccccc;
+}
+  .json-structure-analysis .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     background-color: #f5f5f5;
+    border-radius: 0 0 5px 5px;
+  }
+  .json-structure-analysis pre[class*="language-"] {
+    background: #282c34;
+    margin: 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  .json-structure-analysis code[class*="language-"] {
+    color: #abb2bf;
+    text-shadow: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  }
+  .json-structure-analysis .token.punctuation { color: #abb2bf; }
+  .json-structure-analysis .token.property { color: #e06c75; }
+  .json-structure-analysis .token.string { color: #98c379; }
+ .json-structure-analysis .token.number {
+  font-size: inherit;  /* 使用与周围文本相同的字体大小 */
+  color: inherit;  /* 使用与周围文本相同的颜色 */
+  background: none;  /* 移除任何背景 */
+  font-weight: normal;  /* 确保不加粗 */
+  padding: 0;  /* 移除内边距 */
+  margin: 0;  /* 移除外边距 */
+  vertical-align: baseline;  /* 确保垂直对齐正确 */
+  line-height: inherit;  /* 使用与周围文本相同的行高 */
+  display: inline;  /* 确保数字与其他文本在同一行 */
+  position: static;  /* 防止定位影响 */
+}
+  .json-structure-analysis .token.boolean { color: #56b6c2; }
+  .json-structure-analysis .token.null { color: #c678dd; }
+</style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ArtMentor: AI-Assisted Evaluation of Artworks to Explore Multimodal Large
+              Language Models Capabilities</h1>
+              <div class="is-size-5 publication-authors">
+                <div class="columns is-multiline is-centered" style="text-align: center;">
+                    <!-- 第一行 3 个作者 -->
+                    <div class="column is-one-third">
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=OXSQU8EAAAAJ&hl=en&oi=sra" target="_blank"><strong>Chanjin Zheng</strong></a><sup>*</sup><sup>†</sup>
+                        </span><br>
+                        <span class="author-block">Shanghai Institute of Artificial Intelligence<br>for Education</span><br>
+                        <span class="author-block">East China Normal University, Shanghai, China</span><br>
+                        <span class="author-block">Faculty of Education</span><br>
+                        <span class="author-block">East China Normal University, Shanghai, China</span><br>
+                        <span class="author-block">chjzheng@dep.ecnu.edu.cn</span>
+                    </div>
+                    <div class="column is-one-third">
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=08LF4nsAAAAJ&hl=en&oi=sra" target="_blank"><strong>Zengyi Yu</strong></a><sup>*</sup>
+                        </span><br>
+                        <span class="author-block">Faculty of Education</span><br>
+                        <span class="author-block">East China Normal University, Shanghai, China</span><br>
+                        <span class="author-block">College of Education</span><br>
+                        <span class="author-block">Zhejiang University of Technology, Hangzhou, China</span><br>
+                        <span class="author-block">202105720431@zjut.edu.cn</span>
+                    </div>
+                    <div class="column is-one-third">
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=jQgjkBwAAAAJ&hl=en&oi=sra" target="_blank"><strong>Yilin Jiang</strong></a><sup>*</sup>
+                        </span><br>
+                        <span class="author-block">College of Education</span><br>
+                        <span class="author-block">Zhejiang University of Technology, Hangzhou, China</span><br>
+                        <span class="author-block">zjut_jiangyilin@163.com</span>
+                    </div>
+            
+                    <!-- 第二行 4 个作者 -->
+                    <div class="column is-one-quarter">
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=DhgZPmoAAAAJ&hl=en&oi=sra" target="_blank"><strong>Mingzi Zhang</strong></a>
+                        </span><br>
+                        <span class="author-block">Faculty of Education</span><br>
+                        <span class="author-block">East China Normal University, Shanghai, China</span><br>
+                        <span class="author-block">College of Education</span><br>
+                        <span class="author-block">Zhejiang Normal University, Jinhua, China</span><br>
+                        <span class="author-block">windyday@zjnu.edu.cn</span>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <span class="author-block">
+                            <a href="#" target="_blank"><strong>Xunuo Lu</strong></a>
+                        </span><br>
+                        <span class="author-block">School of Economy</span><br>
+                        <span class="author-block">Zhejiang University of Technology, Hangzhou, China</span><br>
+                        <span class="author-block">13968860822@163.com</span>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <span class="author-block">
+                            <a href="#" target="_blank"><strong>Jing Jin</strong></a>
+                        </span><br>
+                        <span class="author-block">School of Education</span><br>
+                        <span class="author-block">Zhejiang Normal University, Jinhua, China</span><br>
+                        <span class="author-block">Tianchang Guanchao Primary School</span><br>
+                        <span class="author-block">Hangzhou, China</span><br>
+                        <span class="author-block">383230730@qq.com</span>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <span class="author-block">
+                            <a href="#" target="_blank"><strong>Liteng Gao</strong></a>
+                        </span><br>
+                        <span class="author-block">School of Artificial Intelligence</span><br>
+                        <span class="author-block">Science and Technology</span><br>
+                        <span class="author-block">University of Shanghai for Science and Technology, Shanghai, China</span><br>
+                        <span class="author-block">2335060610@st.usst.edu.cn</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="is-size-5 publication-authors" style="text-align: center; margin-top: 10px;">
+                <span class="author-block"><strong>Conference:</strong> CHI 2025</span><br>
+                <span class="eql-cntrb"><small><sup>*</sup> Indicates Equal Contribution</small></span>
+                <span class="eql-cntrb"><small><sup>†</sup> Corresponding Author</small></span>
+            </div>
+            
+            
+            
+            
+
+                  <div class="column has-text-centered">
+            
+
+                 <!-- Github links -->
+<span class="link-block">
+  <a href="https://github.com/SAL-Lab-ECNU/ArtMentor" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-globe"></i>
+    </span>
+    <span>App Code</span>
+  </a>
+</span>
+<span class="link-block">
+  <a href="https://github.com/SAL-Lab-ECNU/ArtMentor/tree/main/ArtMentorAnalysis" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-code"></i>
+    </span>
+    <span>Analysis Code</span>
+  </a>
+</span>
+<span class="link-block">
+  <a href="https://github.com/SAL-Lab-ECNU/ArtMentor/tree/main/ArtMentorAnalysis/Dataset" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-database"></i>
+    </span>
+    <span>Dataset</span>
+  </a>
+</span>
+<span class="link-block">
+  <a href="https://artmentor.github.io/artmentor-dashboard/" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-chart-bar"></i>
+    </span>
+    <span>Data Analysis</span>
+  </a>
+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/Video Figure.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        ArtMentor System Interface and Operation Process.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multimodal Large Language Models (MLLMs) face challenges in artwork evaluation, including subjective human assessments, limitations of result-oriented methods, and lack of modularity. In this paper, we propose that the design and analysis of HCI spaces, using process-oriented data, can more effectively evaluate MLLM capabilities and drive improvements. Applying this methodology, we introduce ArtMentor, a space that combines a dataset and three systems to enhance MLLM evaluations. ArtMentor documents 380 sessions with five art teachers, assessing artworks across nine critical dimensions. The modular system features entity recognition, review generation, and suggestion generation agents, enabling iterative upgrades. Process-based results analysis integrates machine learning and natural language processing to ensure reliable evaluations. Finally, we emphasize MLLM’s focus on details at the expense of the bigger picture and the superior performance of review generation compared to suggestion generation. We encourage further collaboration to cost-effectively enhance MLLM capabilities. Our contributions are available at https://artmentor.github.io.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig1'.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          A multi-agent data collection system from ArtMentor evaluates GPT-4o's art assessment capabilities across 380 sessions with five art teachers and three GPT-4o agents. Each session begins with artwork upload, followed by automatic entity recognition. Teachers refine these entities, select from nine evaluation dimensions, and revise the generated scores, reviews, and suggestions until accurate. The process ends with teachers submitting the finalized entities, scores, reviews, and suggestions.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig2'.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          ArtMentor Space consists of four key components: a. Multi-Agent Data Collection System, b. HCI Dataset, c. Data Analysis System, d. Iterative Upgrades System. The Multi-Agent System includes three agents: E-Agent for entity recognition, R-Agent for review generation, and S-Agent for suggestions. R-Agent and S-Agent perform nine roles, such as Realism and Deformation. Nine HCI processes (P1-P9) are marked by origin: green for computer, orange for human. After data collection, we generate an HCI dataset with five products, evaluated by four metrics. Iterative upgrades focus on improving underperforming roles.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig3'.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          This image displays an interface for analyzing artwork. It features a central panel showing an abstract painting of a horse with various tags. Icons of a robot (E-Agent) and a person in a safety helmet (Art Teacher) are visible. The interface includes buttons for uploading artworks and managing entities, alongside a JSON-style data display showing recognized elements in the artwork.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig4'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        This image displays an interface for art evaluation and suggestion. The top of the interface shows action buttons for "Evaluate & Generate", "Modify", and "Submit". Below, there's a section labeled "Realism" with a score of 5 out of 10. The interface includes two main text areas: a "Review" section critiquing an artwork of a horse, and a "Suggestion" section offering improvements. Each text area has "Modify" and "Submit" buttons. On the right side, two robot icons are labeled "Review Agent" and "Suggestion Agent". The interface uses a light color scheme with rounded elements, suggesting a user-friendly design for collaborative art analysis and improvement.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig5'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        This image displays GPT-4o's accuracy in recognizing art styles across 20 artworks. A 5x4 grid represents each artwork, with lighter circles indicating correct recognition and darker ones showing errors. Artworks 4-7, identified as ink wash paintings, are notably misrecognized, highlighting GPT-4o's specific weakness with this style. Despite this, the overall accuracy is 80%, as shown by the large circle below. This visualization effectively demonstrates GPT-4o's general competence in art style recognition while pinpointing its struggle with ink wash paintings.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig6'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        This bar chart illustrates GPT-4o's entity recognition capabilities. Notably, the precision score stands out at 0.935, significantly higher than other metrics. Accuracy (0.833) and recall (0.836) are nearly equal, while the F1 score (0.881) falls between precision and the other two metrics. The high precision indicates GPT-4o's strong ability to avoid false positives in entity recognition, despite slightly lower overall accuracy and recall.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig7'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Entity classification metrics for GPT-4o across 20 artworks (Artwork Numbers 1-20).
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig8'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Score Acceptance Metrics.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig9'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Text Acceptance Metrics for R-Agent.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig10'.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Text Acceptance Metrics for S-Agent.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Assessment Criteria for Realistic Artwork
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/table2.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Prompt Generation Logic for Suggestion Agent
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+<!--JSON File Structure Analysis-->
+<section class="section json-structure-analysis">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" align="center">HCI File Structure Analysis</h2>
+
+    <div class="file-type">
+<h2 style="font-size: 1.5rem; font-weight: 600;">Entities Folder</h2>
+      <p>This folder contains 20 JSON files, each representing the data of an entity.</p>
+      <button class="collapsible">View JSON Example</button>
+      <div class="content">
+        <pre><code class="language-json">
+{
+  "original": ["Face", "Black hair", "Open mouth", "Green shirt", "Blue shorts", "Black shoes", "Monkey", "Cat", "Dog", "Bird", "Insect", "Exclamation mark", "Yellow platform", "Books"],
+  "added": ["Yellow balances", "schoolbag"],
+  "removed": ["Yellow platform"],
+  "style": {
+    "original": ["Style: Cartoon"],
+    "added": [],
+    "removed": []
+  }
+}
+        </code></pre>
+      </div>
+      <div class="explanation">
+        <h3 style="font-size: 1.2rem; font-weight: 600;">Field Explanations:</h3>
+        <ul>
+          <li><strong>original</strong>: Elements recognized in the original image</li>
+          <li><strong>added</strong>: New elements added by the user</li>
+          <li><strong>removed</strong>: Elements removed by the user</li>
+          <li><strong>style</strong>: Style-related information, including original style, added styles, and removed styles</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="file-type">
+      <h2  style="font-size: 1.5rem; font-weight: 600;">score_Review Folder</h2>
+      <p>This folder contains 180 files, each representing scores and reviews for a photo across 9 dimensions.</p>
+      <button class="collapsible">View JSON Example</button>
+      <div class="content">
+        <pre><code class="language-json">
+[
+  {
+    "round": 1,
+    "data": {
+      "scores": {
+        "original": 0,
+        "current": 0,
+        "initGPTscore": null
+      },
+      "Reviews": {
+        "original": "",
+        "current": "",
+        "added": "",
+        "removed": ""
+      }
+    }
+  },
+  {
+    "round": 2,
+    "data": {
+      "scores": {
+        "original": 4,
+        "current": 4,
+        "initGPTscore": 4
+      },
+      "Reviews": {
+        "original": "The artwork effectively uses contrasting colors to enhance visual interest...",
+        "current": "The artwork effectively uses contrasting colors to enhance visual interest...",
+        "added": "",
+        "removed": ""
+      }
+    }
+  }
+]
+        </code></pre>
+      </div>
+      <div class="explanation">
+        <h3 style="font-size: 1.2rem; font-weight: 600;">Field Explanations:</h3>
+        <ul>
+          <li><strong>round</strong>: Scoring round</li>
+          <li><strong>scores</strong>: Contains original score, current score, and initial GPT score</li>
+          <li><strong>Reviews</strong>: Contains original review, current review, added review, and removed review</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="file-type">
+      <h2  style="font-size: 1.5rem; font-weight: 600;">suggestion Folder</h2>
+      <p>This folder contains 180 files, each representing suggestions for a photo across 9 dimensions.</p>
+      <button class="collapsible">View JSON Example</button>
+      <div class="content">
+        <pre><code class="language-json">
+[
+  {
+    "round": 1,
+    "data": {
+      "suggestions": {
+        "original": "",
+        "current": "",
+        "added": "",
+        "removed": ""
+      }
+    }
+  },
+  {
+    "round": 2,
+    "data": {
+      "suggestions": {
+        "original": "To improve the color contrast in the artwork, consider using more vibrant and varied background colors...",
+        "current": "To improve the color contrast in the artwork, consider using more vibrant and varied background colors...",
+        "added": "",
+        "removed": ""
+      }
+    }
+  }
+]
+        </code></pre>
+      </div>
+      <div class="explanation">
+        <h3 style="font-size: 1.2rem; font-weight: 600;">Field Explanations:</h3>
+        <ul>
+          <li><strong>round</strong>: Suggestion round</li>
+          <li><strong>suggestions</strong>: Contains original suggestion, current suggestion, added suggestion, and removed suggestion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End JSON File Structure Analysis-->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@article{zheng2025artmentor,
+  title={ArtMentor: AI-Assisted Evaluation of Artworks to Explore Multimodal Large Language Models Capabilities},
+  author={Zheng, Chanjin and Yu, Zengyi and Jiang, Yilin and Zhang, Mingzi and Lu, Xunuo and Jin, Jing and Gao, Liteng},
+  journal={arXiv preprint arXiv:2502.13832},
+  year={2025}
+}
+</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+
+    // 使用 Prism.js 高亮代码
+    Prism.highlightAll();
+  });
+</script>
+  </body>
+  </html>
