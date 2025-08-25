@@ -1,241 +1,235 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta charset="utf-8">
+      <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>E-M-N-L-P</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon_blue_outline.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <title>E-M-N-L-P</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon_blue_outline.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-json.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-json.min.js"></script>
 <style>
-  .json-structure-analysis .file-type {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
+  .json-structure-analysis .file-type {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
 }
-  .json-structure-analysis .file-type:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
- .json-structure-analysis .file-type h2 {
-  margin-top: 0;
-  color: #333333;
-  border-bottom: 2px solid #666666;
-  padding-bottom: 10px;
+  .json-structure-analysis .file-type:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+ .json-structure-analysis .file-type h2 {
+  margin-top: 0;
+  color: #333333;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 10px;
 }
-  .json-structure-analysis .collapsible {
-  background-color: #e0e0e0;
-  color: #333333;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  transition: 0.4s;
-  border-radius: 5px;
-  font-weight: 500;
+  .json-structure-analysis .collapsible {
+  background-color: #e0e0e0;
+  color: #333333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  border-radius: 5px;
+  font-weight: 500;
 }
 .json-structure-analysis .active, .json-structure-analysis .collapsible:hover {
-  background-color: #cccccc;
+  background-color: #cccccc;
 }
-  .json-structure-analysis .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-     background-color: #f5f5f5;
-    border-radius: 0 0 5px 5px;
-  }
-  .json-structure-analysis pre[class*="language-"] {
-    background: #282c34;
-    margin: 0;
-    padding: 1em;
-    overflow: auto;
-  }
-  .json-structure-analysis code[class*="language-"] {
-    color: #abb2bf;
-    text-shadow: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    font-size: 14px;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-  }
-  .json-structure-analysis .token.punctuation { color: #abb2bf; }
-  .json-structure-analysis .token.property { color: #e06c75; }
-  .json-structure-analysis .token.string { color: #98c379; }
- .json-structure-analysis .token.number {
-  font-size: inherit;  /* 使用与周围文本相同的字体大小 */
-  color: inherit;  /* 使用与周围文本相同的颜色 */
-  background: none;  /* 移除任何背景 */
-  font-weight: normal;  /* 确保不加粗 */
-  padding: 0;  /* 移除内边距 */
-  margin: 0;  /* 移除外边距 */
-  vertical-align: baseline;  /* 确保垂直对齐正确 */
-  line-height: inherit;  /* 使用与周围文本相同的行高 */
-  display: inline;  /* 确保数字与其他文本在同一行 */
-  position: static;  /* 防止定位影响 */
+  .json-structure-analysis .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     background-color: #f5f5f5;
+    border-radius: 0 0 5px 5px;
+  }
+  .json-structure-analysis pre[class*="language-"] {
+    background: #282c34;
+    margin: 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  .json-structure-analysis code[class*="language-"] {
+    color: #abb2bf;
+    text-shadow: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  }
+  .json-structure-analysis .token.punctuation { color: #abb2bf; }
+  .json-structure-analysis .token.property { color: #e06c75; }
+  .json-structure-analysis .token.string { color: #98c379; }
+ .json-structure-analysis .token.number {
+  font-size: inherit;  /* 使用与周围文本相同的字体大小 */
+  color: inherit;  /* 使用与周围文本相同的颜色 */
+  background: none;  /* 移除任何背景 */
+  font-weight: normal;  /* 确保不加粗 */
+  padding: 0;  /* 移除内边距 */
+  margin: 0;  /* 移除外边距 */
+  vertical-align: baseline;  /* 确保垂直对齐正确 */
+  line-height: inherit;  /* 使用与周围文本相同的行高 */
+  display: inline;  /* 确保数字与其他文本在同一行 */
+  position: static;  /* 防止定位影响 */
 }
-  .json-structure-analysis .token.boolean { color: #56b6c2; }
-  .json-structure-analysis .token.null { color: #c678dd; }
+  .json-structure-analysis .token.boolean { color: #56b6c2; }
+  .json-structure-analysis .token.null { color: #c678dd; }
 </style>
 </head>
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-         <div class="column has-text-centered">
-  <h1 class="title is-1 publication-title">EMNLP: Educator-role Moral and Normative Large Language Models Profiling</h1>
-  <div class="is-size-5 publication-authors">
-    <div class="columns is-multiline is-centered" style="text-align: center;">
-      
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Yilin Jiang</strong><sup>*</sup>
-        </span><br>
-        <span class="author-block">College of Education, Zhejiang University of Technology</span><br>
-        <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou)</span>
-      </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+         <div class="column has-text-centered">
+  <h1 class="title is-1 publication-title">EMNLP: Educator-role Moral and Normative Large Language Models Profiling</h1>
+  <div class="is-size-5 publication-authors">
+    <div class="columns is-multiline is-centered" style="text-align: center;">
+      
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Yilin Jiang</strong><sup>*</sup>
+        </span><br>
+        <span class="author-block">College of Education, Zhejiang University of Technology</span><br>
+        <span class="author-block">The Hong Kong University of Science and Technology (Guangzhou)</span>
+      </div>
 
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Mingzi Zhang</strong><sup>*</sup>
-        </span><br>
-        <span class="author-block">Faculty of Education, East China Normal University</span>
-      </div>
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Mingzi Zhang</strong><sup>*</sup>
+        </span><br>
+        <span class="author-block">Faculty of Education, East China Normal University</span>
+      </div>
 
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Sheng Jin</strong>
-        </span><br>
-        <span class="author-block">GuangHua Law School, Zhejiang University</span>
-      </div>
-      
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Zengyi Yu</strong><sup>†</sup>
-        </span><br>
-        <span class="author-block">Faculty of Education, East China Normal University</span><br>
-        <span class="author-block">51284118014@stu.ecnu.edu.cn</span>
-      </div>
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Sheng Jin</strong>
+        </span><br>
+        <span class="author-block">GuangHua Law School, Zhejiang University</span>
+      </div>
+      
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Zengyi Yu</strong><sup>†</sup>
+        </span><br>
+        <span class="author-block">Faculty of Education, East China Normal University</span><br>
+        <span class="author-block">51284118014@stu.ecnu.edu.cn</span>
+      </div>
 
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Xiangjie Kong</strong><sup>†</sup>
-        </span><br>
-        <span class="author-block">College of Computer Science and Technology</span><br>
-        <span class="author-block">Zhejiang University of Technology</span><br>
-        <span class="author-block">xjkong@ieee.org</span>
-      </div>
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Xiangjie Kong</strong><sup>†</sup>
+        </span><br>
+        <span class="author-block">College of Computer Science and Technology</span><br>
+        <span class="author-block">Zhejiang University of Technology</span><br>
+        <span class="author-block">xjkong@ieee.org</span>
+      </div>
 
-      <div class="column is-one-third">
-        <span class="author-block">
-          <strong>Binghao Tu</strong>
-        </span><br>
-        <span class="author-block">College of Education, Zhejiang University of Technology</span>
-      </div>
+      <div class="column is-one-third">
+        <span class="author-block">
+          <strong>Binghao Tu</strong>
+        </span><br>
+        <span class="author-block">College of Education, Zhejiang University of Technology</span>
+      </div>
 
-    </div>
-  </div>
-  
-  <div class="is-size-5 publication-authors" style="text-align: center; margin-top: 20px;">
-    <span class="author-block" style="font-weight: bold; color: green;">
-      Accepted to EMNLP 2025 Main Conference
-    </span><br>
-    <span class="eql-cntrb"><small><sup>*</sup> Indicates Equal Contribution</small></span><br>
-    <span class="eql-cntrb"><small><sup>†</sup> Corresponding Author</small></span>
-  </div>
-  
+    </div>
+  </div>
+  
+  <div class="is-size-5 publication-authors" style="text-align: center; margin-top: 20px;">
+    <span class="author-block" style="font-weight: bold; color: green;">
+      Accepted to EMNLP 2025 Main Conference
+    </span><br>
+    <span class="eql-cntrb"><small><sup>*</sup> Indicates Equal Contribution</small></span><br>
+    <span class="eql-cntrb"><small><sup>†</sup> Corresponding Author</small></span>
+  </div>
+  
 </div>
 
-                  <div class="column has-text-centered">
-            
+                  <div class="column has-text-centered">
+            
 
-                 <!-- Github links -->
-<span class="link-block">
-  <a href="https://github.com/E-M-N-L-P/EMNLP-Educator-role-Moral-and-Normative-LLMs-Profiling/tree/main/Code" target="_blank"
-  class="external-link button is-normal is-rounded is-dark">
-    <span class="icon">
-      <i class="fas fa-globe"></i>
-    </span>
-    <span>Code & Data</span>
-  </a>
+                 <span class="link-block">
+  <a href="https://github.com/E-M-N-L-P/EMNLP-Educator-role-Moral-and-Normative-LLMs-Profiling/tree/main/Code" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-globe"></i>
+    </span>
+    <span>Code & Data</span>
+  </a>
 </span>
 
 <span class="link-block">
-  <a href="https://github.com/E-M-N-L-P/EMNLP-Educator-role-Moral-and-Normative-LLMs-Profiling/tree/main/Raw_Results" target="_blank"
-  class="external-link button is-normal is-rounded is-dark">
-    <span class="icon">
-      <i class="fas fa-database"></i>
-    </span>
-    <span>Result</span>
-  </a>
+  <a href="https://github.com/E-M-N-L-P/EMNLP-Educator-role-Moral-and-Normative-LLMs-Profiling/tree/main/Raw_Results" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-database"></i>
+    </span>
+    <span>Result</span>
+  </a>
 </span>
 <span class="link-block">
-  <a href="static/pdfs/Instructions_for_EMNLP_2023_Proceedings (3).pdf" target="_blank"
-  class="external-link button is-normal is-rounded is-dark">
-    <span class="icon">
-      <i class="fas fa-file-alt"></i>
-    </span>
-    <span>Paper</span>
-  </a>
+  <a href="static/pdfs/Instructions_for_EMNLP_2023_Proceedings (3).pdf" target="_blank"
+  class="external-link button is-normal is-rounded is-dark">
+    <span class="icon">
+      <i class="fas fa-file-alt"></i>
+    </span>
+    <span>Paper</span>
+  </a>
 </span>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -243,227 +237,257 @@
 
 
 
-<!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-           Simulating Professions (SP) with Large Language Models (LLMs) has shown promising potential in education, healthcare, law, and other domains. However, the moral and ethical behavior of LLMs in educator roles remains underexplored. In this work, we introduce EMNLP (Educator-role Moral and Normative LLMs Profiling), a comprehensive framework for evaluating personality traits, moral development stages, and harmful content risk in teacher-role LLMs. EMNLP integrates an extended teacher personality scale (CPST-E), a diverse set of 88 moral dilemmas specific to the teaching context, and a soft prompt injection module targeting four moral flaw dimensions. Through experiments on 12 LLMs, we uncover key trends: teacher SP LLMs tend to exhibit idealized yet emotionally muted personality profiles, perform well in abstract ethical reasoning but poorly in emotionally nuanced scenarios, and show a tradeoff between reasoning strength and robustness against prompt-based role manipulation. Additionally, we evaluate the impact of temperature settings on behavioral consistency. Our results highlight the need for finer-grained alignment strategies to ensure ethical behavior in high-stakes educational simulations.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           Simulating Professions (SP) with Large Language Models (LLMs) has shown promising potential in education, healthcare, law, and other domains. However, the moral and ethical behavior of LLMs in educator roles remains underexplored. In this work, we introduce EMNLP (Educator-role Moral and Normative LLMs Profiling), a comprehensive framework for evaluating personality traits, moral development stages, and harmful content risk in teacher-role LLMs. EMNLP integrates an extended teacher personality scale (CPST-E), a diverse set of 88 moral dilemmas specific to the teaching context, and a soft prompt injection module targeting four moral flaw dimensions. Through experiments on 12 LLMs, we uncover key trends: teacher SP LLMs tend to exhibit idealized yet emotionally muted personality profiles, perform well in abstract ethical reasoning but poorly in emotionally nuanced scenarios, and show a tradeoff between reasoning strength and robustness against prompt-based role manipulation. Additionally, we evaluate the impact of temperature settings on behavioral consistency. Our results highlight the need for finer-grained alignment strategies to ensure ethical behavior in high-stakes educational simulations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <!-- HEXACO Radar Chart - Temperature 0 -->
-          <img src="static/images/hexaco_radar_temp=0.png" alt="HEXACO Radar Chart (Temperature=0)"/>
-          <h2 class="subtitle has-text-centered">
-            HEXACO Radar Chart comparing personality traits of teacher LLMs and real teachers at temperature=0. The visualization shows how model-generated teacher personalities differ from those of in-service teachers across six major personality dimensions.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Radar Chart - Temperature 0.25 -->
-          <img src="static/images/hexaco_radar_temp=025.png" alt="HEXACO Radar Chart (Temperature=0.25)"/>
-          <h2 class="subtitle has-text-centered">
-            HEXACO Radar Chart showing personality trait comparison at temperature=0.25. This visualization demonstrates how sampling temperature affects the personality profile generated by teacher LLMs compared to real teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Radar Chart - Temperature 0.5 -->
-          <img src="static/images/hexaco_radar_temp=05.png" alt="HEXACO Radar Chart (Temperature=0.5)"/>
-          <h2 class="subtitle has-text-centered">
-            HEXACO Radar Chart at temperature=0.5, illustrating mid-range temperature effects on teacher LLM personality trait expression compared to real teacher averages across the six HEXACO dimensions.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Radar Chart - Temperature 0.75 -->
-          <img src="static/images/hexaco_radar_temp=075.png" alt="HEXACO Radar Chart (Temperature=0.75)"/>
-          <h2 class="subtitle has-text-centered">
-            HEXACO Radar Chart at temperature=0.75, showing how increased randomness in sampling affects the personality trait distribution of teacher LLMs compared to the more balanced profile of real-world educators.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Radar Chart - Temperature 1.0 -->
-          <img src="static/images/hexaco_radar_temp=1.png" alt="HEXACO Radar Chart (Temperature=1.0)"/>
-          <h2 class="subtitle has-text-centered">
-            HEXACO Radar Chart at maximum temperature=1.0, displaying the highest variance in personality trait expression among teacher LLMs. This visualization highlights how high-temperature sampling leads to more divergent personality profiles compared to real teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Subplots - Temperature 0 -->
-          <img src="static/images/hexaco_subplots_temp=0.png" alt="HEXACO Item-level Comparison (Temperature=0)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the HEXACO-60 inventory at temperature=0. This detailed visualization breaks down how teacher LLMs respond to individual personality assessment items compared to real teachers, showing more polarized responses from the models.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Subplots - Temperature 0.25 -->
-          <img src="static/images/hexaco_subplots_temp=025.png" alt="HEXACO Item-level Comparison (Temperature=0.25)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the HEXACO-60 inventory at temperature=0.25, showing how slight randomness affects responses to individual personality assessment items across different LLMs compared to in-service teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Subplots - Temperature 0.5 -->
-          <img src="static/images/hexaco_subplots_temp=05.png" alt="HEXACO Item-level Comparison (Temperature=0.5)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the HEXACO-60 inventory at temperature=0.5, illustrating medium-temperature effects on item-specific personality trait expressions across various teacher LLMs and real teacher averages.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Subplots - Temperature 0.75 -->
-          <img src="static/images/hexaco_subplots_temp=075.png" alt="HEXACO Item-level Comparison (Temperature=0.75)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the HEXACO-60 inventory at temperature=0.75, showing how higher randomness influences responses to specific personality items, with increasingly varied responses from teacher LLMs.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- HEXACO Subplots - Temperature 1.0 -->
-          <img src="static/images/hexaco_subplots_temp=1.png" alt="HEXACO Item-level Comparison (Temperature=1.0)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the HEXACO-60 inventory at maximum temperature=1.0, demonstrating how high randomness in sampling produces the most diverse responses to personality items from teacher LLMs compared to the more consistent responses of real teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Radar Chart - Temperature 0 -->
-          <img src="static/images/cpst_radar_temp=0.png" alt="CPST Radar Chart (Temperature=0)"/>
-          <h2 class="subtitle has-text-centered">
-            CPST-E Radar Chart at temperature=0, comparing professional teacher personality traits between LLMs and real teachers. This visualization focuses on teaching-specific personality dimensions that influence professional practice.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Radar Chart - Temperature 0.25 -->
-          <img src="static/images/cpst_radar_temp=025.png" alt="CPST Radar Chart (Temperature=0.25)"/>
-          <h2 class="subtitle has-text-centered">
-            CPST-E Radar Chart at temperature=0.25, showing how low-temperature sampling affects the professional personality traits of teacher LLMs compared to in-service teachers across teaching-specific dimensions.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Radar Chart - Temperature 0.5 -->
-          <img src="static/images/cpst_radar_temp=05.png" alt="CPST Radar Chart (Temperature=0.5)"/>
-          <h2 class="subtitle has-text-centered">
-            CPST-E Radar Chart at temperature=0.5, illustrating medium-temperature effects on professional teacher personality traits across various LLMs compared to real teacher averages.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Radar Chart - Temperature 0.75 -->
-          <img src="static/images/cpst_radar_temp=075.png" alt="CPST Radar Chart (Temperature=0.75)"/>
-          <h2 class="subtitle has-text-centered">
-            CPST-E Radar Chart at temperature=0.75, showing how increased randomness affects the professional personality profile of teacher LLMs across teaching-specific dimensions compared to real educators.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Radar Chart - Temperature 1.0 -->
-          <img src="static/images/cpst_radar_temp=1.png" alt="CPST Radar Chart (Temperature=1.0)"/>
-          <h2 class="subtitle has-text-centered">
-            CPST-E Radar Chart at maximum temperature=1.0, displaying the highest variance in professional teacher personality traits among LLMs. This shows how high-temperature sampling impacts teaching-specific attributes compared to real teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Subplots - Temperature 0 -->
-          <img src="static/images/cpst_subplots_temp=0.png" alt="CPST Item-level Comparison (Temperature=0)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the CPST-E inventory at temperature=0. This detailed visualization breaks down how teacher LLMs respond to individual professional personality assessment items compared to real teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Subplots - Temperature 0.25 -->
-          <img src="static/images/cpst_subplots_temp=025.png" alt="CPST Item-level Comparison (Temperature=0.25)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the CPST-E inventory at temperature=0.25, showing how slight randomness affects responses to professional teaching personality items across different LLMs compared to in-service teachers.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Subplots - Temperature 0.5 -->
-          <img src="static/images/cpst_subplots_temp=05.png" alt="CPST Item-level Comparison (Temperature=0.5)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the CPST-E inventory at temperature=0.5, illustrating medium-temperature effects on teaching-specific personality traits across various LLMs and real teacher averages.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Subplots - Temperature 0.75 -->
-          <img src="static/images/cpst_subplots_temp=075.png" alt="CPST Item-level Comparison (Temperature=0.75)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the CPST-E inventory at temperature=0.75, showing how higher randomness influences responses to specific professional teaching personality items from LLMs.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- CPST Subplots - Temperature 1.0 -->
-          <img src="static/images/cpst_subplots_temp=1.png" alt="CPST Item-level Comparison (Temperature=1.0)"/>
-          <h2 class="subtitle has-text-centered">
-            Item-level comparison on the CPST-E inventory at maximum temperature=1.0, demonstrating how high randomness in sampling produces the most diverse responses to professional teaching personality items from LLMs compared to real teachers.
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+                    <img src="static/images/hexaco_radar_temp=0.png" alt="HEXACO Radar Chart (Temperature=0)"/>
+          <h2 class="subtitle has-text-centered">
+            HEXACO Radar Chart comparing personality traits of teacher LLMs and real teachers at temperature=0. The visualization shows how model-generated teacher personalities differ from those of in-service teachers across six major personality dimensions.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_radar_temp=025.png" alt="HEXACO Radar Chart (Temperature=0.25)"/>
+          <h2 class="subtitle has-text-centered">
+            HEXACO Radar Chart showing personality trait comparison at temperature=0.25. This visualization demonstrates how sampling temperature affects the personality profile generated by teacher LLMs compared to real teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_radar_temp=05.png" alt="HEXACO Radar Chart (Temperature=0.5)"/>
+          <h2 class="subtitle has-text-centered">
+            HEXACO Radar Chart at temperature=0.5, illustrating mid-range temperature effects on teacher LLM personality trait expression compared to real teacher averages across the six HEXACO dimensions.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_radar_temp=075.png" alt="HEXACO Radar Chart (Temperature=0.75)"/>
+          <h2 class="subtitle has-text-centered">
+            HEXACO Radar Chart at temperature=0.75, showing how increased randomness in sampling affects the personality trait distribution of teacher LLMs compared to the more balanced profile of real-world educators.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_radar_temp=1.png" alt="HEXACO Radar Chart (Temperature=1.0)"/>
+          <h2 class="subtitle has-text-centered">
+            HEXACO Radar Chart at maximum temperature=1.0, displaying the highest variance in personality trait expression among teacher LLMs. This visualization highlights how high-temperature sampling leads to more divergent personality profiles compared to real teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_subplots_temp=0.png" alt="HEXACO Item-level Comparison (Temperature=0)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the HEXACO-60 inventory at temperature=0. This detailed visualization breaks down how teacher LLMs respond to individual personality assessment items compared to real teachers, showing more polarized responses from the models.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_subplots_temp=025.png" alt="HEXACO Item-level Comparison (Temperature=0.25)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the HEXACO-60 inventory at temperature=0.25, showing how slight randomness affects responses to individual personality assessment items across different LLMs compared to in-service teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_subplots_temp=05.png" alt="HEXACO Item-level Comparison (Temperature=0.5)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the HEXACO-60 inventory at temperature=0.5, illustrating medium-temperature effects on item-specific personality trait expressions across various teacher LLMs and real teacher averages.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_subplots_temp=075.png" alt="HEXACO Item-level Comparison (Temperature=0.75)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the HEXACO-60 inventory at temperature=0.75, showing how higher randomness influences responses to specific personality items, with increasingly varied responses from teacher LLMs.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/hexaco_subplots_temp=1.png" alt="HEXACO Item-level Comparison (Temperature=1.0)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the HEXACO-60 inventory at maximum temperature=1.0, demonstrating how high randomness in sampling produces the most diverse responses to personality items from teacher LLMs compared to the more consistent responses of real teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_radar_temp=0.png" alt="CPST Radar Chart (Temperature=0)"/>
+          <h2 class="subtitle has-text-centered">
+            CPST-E Radar Chart at temperature=0, comparing professional teacher personality traits between LLMs and real teachers. This visualization focuses on teaching-specific personality dimensions that influence professional practice.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_radar_temp=025.png" alt="CPST Radar Chart (Temperature=0.25)"/>
+          <h2 class="subtitle has-text-centered">
+            CPST-E Radar Chart at temperature=0.25, showing how low-temperature sampling affects the professional personality traits of teacher LLMs compared to in-service teachers across teaching-specific dimensions.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_radar_temp=05.png" alt="CPST Radar Chart (Temperature=0.5)"/>
+          <h2 class="subtitle has-text-centered">
+            CPST-E Radar Chart at temperature=0.5, illustrating medium-temperature effects on professional teacher personality traits across various LLMs compared to real teacher averages.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_radar_temp=075.png" alt="CPST Radar Chart (Temperature=0.75)"/>
+          <h2 class="subtitle has-text-centered">
+            CPST-E Radar Chart at temperature=0.75, showing how increased randomness affects the professional personality profile of teacher LLMs across teaching-specific dimensions compared to real educators.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_radar_temp=1.png" alt="CPST Radar Chart (Temperature=1.0)"/>
+          <h2 class="subtitle has-text-centered">
+            CPST-E Radar Chart at maximum temperature=1.0, displaying the highest variance in professional teacher personality traits among LLMs. This shows how high-temperature sampling impacts teaching-specific attributes compared to real teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_subplots_temp=0.png" alt="CPST Item-level Comparison (Temperature=0)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the CPST-E inventory at temperature=0. This detailed visualization breaks down how teacher LLMs respond to individual professional personality assessment items compared to real teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_subplots_temp=025.png" alt="CPST Item-level Comparison (Temperature=0.25)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the CPST-E inventory at temperature=0.25, showing how slight randomness affects responses to professional teaching personality items across different LLMs compared to in-service teachers.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_subplots_temp=05.png" alt="CPST Item-level Comparison (Temperature=0.5)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the CPST-E inventory at temperature=0.5, illustrating medium-temperature effects on teaching-specific personality traits across various LLMs and real teacher averages.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_subplots_temp=075.png" alt="CPST Item-level Comparison (Temperature=0.75)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the CPST-E inventory at temperature=0.75, showing how higher randomness influences responses to specific professional teaching personality items from LLMs.
+          </h2>
+        </div>
+        <div class="item">
+                    <img src="static/images/cpst_subplots_temp=1.png" alt="CPST Item-level Comparison (Temperature=1.0)"/>
+          <h2 class="subtitle has-text-centered">
+            Item-level comparison on the CPST-E inventory at maximum temperature=1.0, demonstrating how high randomness in sampling produces the most diverse responses to professional teaching personality items from LLMs compared to real teachers.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- End image carousel -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
+<section class="section">
+  <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework</h2>
+      </div>
+    </div>
+        <div class="columns is-centered">
+      <div class="column is-full-width">
+        <p class="content has-text-justified">
+          The EMNLP framework is a comprehensive evaluation suite designed to profile the moral and normative characteristics of Large Language Models (LLMs) when they assume the role of an educator. It consists of three core modules that work in synergy to provide a multi-faceted analysis of LLM behavior in educational contexts. Each module is specifically tailored to assess a different aspect of the LLM's performance, from its underlying personality traits to its handling of complex ethical dilemmas and its resilience to adversarial prompts. This holistic approach ensures a thorough understanding of the LLM's suitability and potential risks when deployed in educational applications.
+        </p>
+      </div>
+    </div>
+        <div class="columns is-centered">
+            <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Personality and Moral Stage Profiling</p>
+              </div>
+            </div>
+            <div class="content">
+              This module assesses the personality traits of teacher-role LLMs using two specialized instruments: the HEXACO-60 inventory, which measures six major dimensions of personality (Honesty-Humility, Emotionality, Extraversion, Agreeableness, Conscientiousness, and Openness to Experience), and the extended Chinese Primary School Teacher Personality Scale (CPST-E), which evaluates professional personality traits relevant to the teaching context. By comparing the LLM-generated profiles with those of real in-service teachers, this module identifies key differences in personality structure and emotional expression. This analysis provides foundational insights into the LLM's behavioral predispositions and alignment with the expected characteristics of an effective educator.
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Moral Dilemma Evaluation</p>
+              </div>
+            </div>
+            <div class="content">
+              The Moral Dilemma Evaluation module probes the ethical reasoning capabilities of teacher-role LLMs by presenting them with a diverse set of 88 moral dilemmas specifically designed for the teaching context. These scenarios cover a wide range of challenging situations that educators may face, from balancing the needs of individual students with the demands of the curriculum to addressing sensitive issues like bullying, academic integrity, and student well-being. The LLM's responses are analyzed to determine its stage of moral development, its ability to apply ethical principles in nuanced situations, and its capacity for empathetic and emotionally intelligent reasoning. This module reveals how well LLMs can navigate the complex ethical landscape of the modern classroom.
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">Moral Flaw Robustness Test</p>
+              </div>
+            </div>
+            <div class="content">
+              This module evaluates the robustness of teacher-role LLMs against adversarial manipulations by employing a soft prompt injection technique. It targets four specific moral flaw dimensions: inducing bias, promoting harmful ideologies, encouraging unethical behavior, and generating inappropriate content. By systematically injecting subtle, yet potentially malicious, prompts into the conversation, this module assesses the LLM's ability to maintain its ethical guardrails and resist being led astray. The results of this test are crucial for understanding the potential risks associated with deploying LLMs in educational settings and for developing more effective safety and alignment strategies to mitigate these risks.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
       <pre><code>@article{jiang2025emnlp,
-  title={EMNLP: Educator-role Moral and Normative Large Language Models Profiling},
-  author={Jiang, Yilin and Zhang, Mingzi and Jin, Sheng and Yu, Zengyi and Kong, Xiangjie and Tu, Binghao},
-  journal={arXiv preprint arXiv:2508.15250},
-  year={2025}
+  title={EMNLP: Educator-role Moral and Normative Large Language Models Profiling},
+  author={Jiang, Yilin and Zhang, Mingzi and Jin, Sheng and Yu, Zengyi and Kong, Xiangjie and Tu, Binghao},
+  journal={arXiv preprint arXiv:2508.15250},
+  year={2025}
 }
 </code></pre>
-    </div>
+    </div>
 </section>
-<!--End BibTex citation -->
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
 
-        </div>
-      </div>
-    </div>
-  </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+  document.addEventListener('DOMContentLoaded', (event) => {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
 
-    // 使用 Prism.js 高亮代码
-    Prism.highlightAll();
-  });
+    // 使用 Prism.js 高亮代码
+    Prism.highlightAll();
+  });
 </script>
-  </body>
-  </html>
+  </body>
+  </html>
